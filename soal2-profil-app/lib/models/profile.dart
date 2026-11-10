@@ -1,5 +1,4 @@
 // Data profil, taruh di satu tempat biar gampang diubah.
-// TODO: hp masih placeholder, isi yang asli sebelum kumpul.
 // Foto ganti file assets/images/profile.jpg dengan foto sendiri.
 class Profile {
   final String nama;
@@ -37,7 +36,7 @@ class Profile {
         bio: 'Mahasiswa Teknik Informatika yang suka ngoprek aplikasi '
             'mobile, bot Telegram, dan server.',
         email: 'adipratamarico6@gmail.com',
-        hp: '081200000000',
+        hp: '088294832594',
         github: 'snzza',
         fotoAsset: 'assets/images/profile.jpg',
         skills: ['Flutter & Dart', 'Bot Telegram', 'Manajemen VPS & Server'],
