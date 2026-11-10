@@ -43,8 +43,8 @@ class Profile {
         pendidikan: [
           'S1 Teknik Informatika — Institut Teknologi & Bisnis '
               'Bina Sarana Global (2024–sekarang)',
-          'SMA/Sederajat — (isi nama sekolah)',
-          'SMP/Sederajat — (isi nama sekolah)',
+          'SMK Yuppentek 2',
+          'SMP Negeri 8 Tangerang',
         ],
       );
 
