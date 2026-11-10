@@ -2,6 +2,7 @@
 
 Nama: Rico Adi Pratama
 NIM: 1124160054
+Kelas: SE 2
 Prodi: Teknik Informatika
 Mata Kuliah: Pemrograman Mobile (KB1185)
 Dosen: I Ketut Gunawan

@@ -1,5 +1,5 @@
 // Data profil, taruh di satu tempat biar gampang diubah.
-// TODO: kelas dan hp masih placeholder, isi yang asli sebelum kumpul.
+// TODO: hp masih placeholder, isi yang asli sebelum kumpul.
 // Foto ganti file assets/images/profile.jpg dengan foto sendiri.
 class Profile {
   final String nama;
@@ -33,7 +33,7 @@ class Profile {
         nama: 'Rico Adi Pratama',
         nim: '1124160054',
         prodi: 'Teknik Informatika',
-        kelas: 'ISI KELAS KAMU',
+        kelas: 'SE 2',
         bio: 'Mahasiswa Teknik Informatika yang suka ngoprek aplikasi '
             'mobile, bot Telegram, dan server.',
         email: 'adipratamarico6@gmail.com',
