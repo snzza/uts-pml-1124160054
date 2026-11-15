@@ -45,7 +45,12 @@ class _LoginPageState extends State<LoginPage> {
     return null;
   }
 
-  // Tidak ada server, jadi login demo: email valid + password min 6 huruf.
+  // Akun demo (tanpa server). Cuma akun ini yang bisa masuk.
+  static const _demoEmail = 'adipratamarico6@gmail.com';
+  static const _demoPassword = 'rico123';
+
+  // Tidak ada server, jadi login demo: email + password harus
+  // cocok sama akun demo di atas, kalau salah muncul error.
   Future<void> _login() async {
     if (!_formKey.currentState!.validate()) {
       return;
@@ -54,6 +59,15 @@ class _LoginPageState extends State<LoginPage> {
     // Simulasi proses async, misal lagi cek ke server.
     await Future.delayed(const Duration(seconds: 1));
     if (!mounted) return;
+    final email = _emailController.text.trim();
+    final password = _passwordController.text;
+    if (email != _demoEmail || password != _demoPassword) {
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Email atau password salah')),
+      );
+      return;
+    }
     setState(() => _isLoading = false);
     // pushReplacement biar tombol back tidak balik ke login.
     Navigator.pushReplacementNamed(
@@ -134,7 +148,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   const SizedBox(height: 16),
                   const Text(
-                    'Login demo: email valid + password minimal 6 karakter.',
+                    'Akun demo: adipratamarico6@gmail.com / rico123',
                     textAlign: TextAlign.center,
                   ),
                 ],

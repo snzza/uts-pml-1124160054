@@ -20,6 +20,19 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   ThemeMode _themeMode = ThemeMode.system;
 
+  @override
+  void initState() {
+    super.initState();
+    // Samakan state awal sama tema sistem, biar ikon toggle + switch
+    // di drawer nggak salah nunjukkin tema yang lagi aktif.
+    final terang = WidgetsBinding
+            .instance
+            .platformDispatcher
+            .platformBrightness ==
+        Brightness.light;
+    _themeMode = terang ? ThemeMode.light : ThemeMode.dark;
+  }
+
   void _toggleTheme() {
     setState(() {
       _themeMode =

@@ -24,7 +24,7 @@ void main() {
       find.byType(TextFormField).first,
       'adipratamarico6@gmail.com',
     );
-    await tester.enterText(find.byType(TextFormField).last, 'rahasia123');
+    await tester.enterText(find.byType(TextFormField).last, 'rico123');
     await tester.tap(find.text('Masuk'));
     await tester.pump();
     // Loading jalan dulu
@@ -34,5 +34,20 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Profil Mahasiswa'), findsOneWidget);
     expect(find.text('Rico Adi Pratama'), findsWidgets);
+  });
+
+  testWidgets('login dengan password salah muncul error', (tester) async {
+    await tester.pumpWidget(const MyApp());
+
+    await tester.enterText(
+      find.byType(TextFormField).first,
+      'adipratamarico6@gmail.com',
+    );
+    await tester.enterText(find.byType(TextFormField).last, 'salah123');
+    await tester.tap(find.text('Masuk'));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pump();
+    expect(find.text('Email atau password salah'), findsOneWidget);
+    expect(find.text('Profil Mahasiswa'), findsNothing);
   });
 }

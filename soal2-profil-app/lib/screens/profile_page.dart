@@ -80,7 +80,6 @@ class _ProfilePageState extends State<ProfilePage> {
                   CircleAvatar(
                     radius: 28,
                     backgroundImage: AssetImage(_profile.fotoAsset),
-                    child: const Icon(Icons.person, size: 28),
                   ),
                   const SizedBox(height: 8),
                   Text(
@@ -133,7 +132,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 CircleAvatar(
                   radius: 50,
                   backgroundImage: AssetImage(_profile.fotoAsset),
-                  child: const Icon(Icons.person, size: 50),
                 ),
                 const SizedBox(height: 16),
                 Text(
