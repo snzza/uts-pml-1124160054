@@ -32,4 +32,4 @@ flutter pub get
 flutter run
 ```
 
-APK release-nya nanti diupload ke GitHub Releases (tag `v1.0.0`).
+APK release-nya ada di [GitHub Releases (tag `v1.0.0`)](https://github.com/snzza/uts-pml-1124160054/releases/tag/v1.0.0).
