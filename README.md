@@ -19,6 +19,8 @@ Foldernya `soal1-live-coding/`.
 Aplikasi Flutter di `soal2-profil-app/`. Dijalanin di HP Android atau
 emulator, terus dipresentasiin lewat video YouTube.
 
+Video presentasi: https://youtu.be/v7Vb7dpj_fE
+
 Fiturnya: login (Form + validator, loading), halaman profil (foto,
 nama, NIM, prodi, kelas, bio, kartu kontak), edit profil (validasi
 nama, email, HP 10–13 digit), tentang saya, drawer + bottom nav +
